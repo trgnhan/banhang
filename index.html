@@ -27,7 +27,7 @@
         <div class="home"><a href="#">Trang chủ</a></div>
         <div class="nu"><a href="#">Nữ</a></div>
         <div class="nam"><a href="#">Nam</a></div>
-        <div class="bst"><a href="#">Bộ sưu tập </a></div>
+        <div class="bst"><a href="#">Bộ sưu tập</a></div>
         <div class="pk"><a href="#">Phụ kiện</a></div>
       </div>
       <div class="search-bar">
@@ -37,7 +37,7 @@
           id="searchInput"
           placeholder="Tìm kiếm"
         />
-        <i class="ti-search"></i>
+        <i class="ti-search search"></i>
       </div>
       <div class="icons">
         <i class="ti-user"></i>
@@ -45,7 +45,65 @@
         <i class="ti-comments"></i>
       </div>
     </div>
-    <div class="content">Quảng cáo</div>
+    <div class="container-header">
+      <div class="column" style="margin-left: 80px">
+        <h2>ÁO</h2>
+        <ul>
+          <li>- Áo sơ mi</li>
+          <li>- Áo vest</li>
+          <li>- Áo Demi</li>
+          <li>- Áo dài</li>
+          <li>- Áo dệt kim</li>
+          <li>- Áo 2 dây</li>
+          <li>- Áo len</li>
+          <li>- Áo khoác</li>
+          <li>- Áo mangto</li>
+          <li>- Đồ ngủ - Đồ mặc nhà</li>
+        </ul>
+      </div>
+      <div class="column">
+        <h2>ĐẦM</h2>
+        <ul>
+          <li>- Đầm công sở</li>
+          <li>- Đầm dạo phố</li>
+          <li>- Đầm dạ hội</li>
+          <li>- JUMPSUIT</li>
+          <li>- Váy đầm hoa</li>
+        </ul>
+      </div>
+      <div class="column">
+        <h2>QUẦN</h2>
+        <ul>
+          <li>- Quần dài</li>
+          <li>- Quần lửng</li>
+          <li>- Quần SHORT</li>
+          <li>- Quần JEAN</li>
+          <li>- Quần áo dài</li>
+        </ul>
+      </div>
+      <div class="column">
+        <h2>CHÂN VÁY</h2>
+        <ul>
+          <li>- Chân váy dài</li>
+          <li>- Chân váy ngắn</li>
+        </ul>
+      </div>
+    </div>
+    <div class="content">
+      <div class="anhchinh">
+        <img src="./accsets/img/a1.jpg" alt="anh" />
+        <div class="overlay-text">Bộ sưu tập mới</div>
+
+        <div class="sub-text">
+          Cửa hàng tư vấn quản lý kinh doanh cho các thương hiệu phong cách sống
+        </div>
+
+        <div class="buttons">
+          <button class="btn btnXT">XEM THÊM</button>
+          <button class="btn btnMN">MUA NGAY</button>
+        </div>
+      </div>
+    </div>
     <!-- script cho search -->
     <script>
       const searchInput = document.getElementById("searchInput");
@@ -55,7 +113,7 @@
       });
       searchInput.addEventListener("mouseout", () => {
         searchInput.style.width = "100px";
-        searchInput.placeholder = "Tìm kiếm"; // Hiển thị lại placeholder
+        searchInput.placeholder = "Tìm kiếm"; // Hiển thị lại placeholder khi không hover
       });
     </script>
   </body>

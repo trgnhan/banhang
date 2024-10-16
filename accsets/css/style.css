@@ -35,14 +35,26 @@ body {
   width: 120px;
   text-align: center;
 }
+.nu,
+.nam {
+  border-bottom: 1px solid white;
+}
+.nu:hover,
+.nam:hover {
+  border-color: #000;
+}
+.bst:hover,
+.pk:hover {
+  border-bottom: 1px solid #000;
+}
 .nav-links {
   display: flex;
-  gap: 30px;
+  gap: 20px;
 }
 .nav-links a {
   text-decoration: none;
   color: black;
-  font-size: 20px;
+  font-size: 18px;
 }
 .search-bar {
   font-size: 20px;
@@ -51,6 +63,8 @@ body {
   gap: 10px;
   flex-grow: 1;
   justify-content: center;
+  justify-content: flex-end;
+  margin-right: 30px;
 }
 .search-box {
   width: 100px;
@@ -70,13 +84,109 @@ body {
   cursor: pointer;
 }
 .content {
-  width: 95%;
-  height: 200px;
-  text-align: center;
-  margin: 50px auto;
-  font-size: 18px;
-  background-color: #bfefe5;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.anhchinh {
+  width: 100%;
+  background-size: auto 100%;
+  text-align: center;
+  margin: 0px auto;
+  font-size: 18px;
+  position: relative;
+}
+.anhchinh img {
+  max-width: 100%;
+  height: auto;
+}
+.overlay-text {
+  position: absolute;
+  top: 77%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  white-space: nowrap;
+  width: 200px;
+}
+.sub-text {
+  position: absolute;
+  top: 82%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  font-weight: normal;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  width: 90%;
+  text-align: center;
+  width: 300px;
+}
+.buttons {
+  position: absolute;
+  top: 89%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 10px;
+}
+.btn {
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.btnMN {
+  background-color: #3795ff;
+  color: #ddd;
+}
+.btnMN:hover {
+  background-color: red;
+}
+.btnXT:hover {
+  background-color: red;
+  color: white;
+  border-color: red;
+}
+.btnXT {
+  color: #0077ff;
+  background: transparent;
+  border: 1px solid #0077ff;
+}
+.bst,
+.pk {
+  margin-left: 10px;
+}
+.search {
+  cursor: pointer;
+}
+.column {
+  margin: 0 30px;
+  flex-basis: 0;
+  flex-grow: 1;
+}
+.column h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.column ul {
+  list-style-type: none;
+  padding: 0;
+}
+.column ul li {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.container-header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  display: none; /* Ẩn container-header theo mặc định */
+}
+.nav-links .nu:hover + .container-header {
+  display: flex; /* Hiện container-header khi hover vào mục "Nữ" */
 }
