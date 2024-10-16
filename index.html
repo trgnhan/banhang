@@ -25,7 +25,9 @@
       </div>
       <div class="nav-links">
         <div class="home"><a href="#">Trang chủ</a></div>
-        <div class="nu"><a href="#">Nữ</a></div>
+        <div class="nu" onmouseover="showDiv()" onmouseout="hideDiv()">
+          <a href="#">Nữ</a>
+        </div>
         <div class="nam"><a href="#">Nam</a></div>
         <div class="bst"><a href="#">Bộ sưu tập</a></div>
         <div class="pk"><a href="#">Phụ kiện</a></div>
@@ -45,7 +47,7 @@
         <i class="ti-comments"></i>
       </div>
     </div>
-    <div class="container-header">
+    <div id="nu-link" class="nu-container hidden">
       <div class="column" style="margin-left: 80px">
         <h2>ÁO</h2>
         <ul>
@@ -104,8 +106,18 @@
         </div>
       </div>
     </div>
-    <!-- script cho search -->
+    <!-- script cho nu-container -->
     <script>
+      function showDiv() {
+        document.getElementById("nu-link").classList.remove("hidden");
+      }
+
+      function hideDiv() {
+        document.getElementById("nu-link").classList.add("hidden");
+      }
+
+      <!-- script cho search -->
+
       const searchInput = document.getElementById("searchInput");
       searchInput.addEventListener("mouseover", () => {
         searchInput.style.width = "150px";
